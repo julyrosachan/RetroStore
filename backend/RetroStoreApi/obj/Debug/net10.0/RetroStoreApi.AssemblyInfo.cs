@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RetroStoreApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7322a55dcc408e1ac747ba69697f433ccc26df59")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00244a427ec25d991909c91fbcf5ed94db4b6b6a")]
 [assembly: System.Reflection.AssemblyProductAttribute("RetroStoreApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RetroStoreApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

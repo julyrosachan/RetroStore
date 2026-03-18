@@ -3242,11 +3242,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/macbook/Desktop/RetroStore/backend/RetroStoreApi/RetroStoreApi.csproj",
+      "projectUniqueName": "/Users/macbook/Desktop/RetroStore 2/backend/RetroStoreApi/RetroStoreApi.csproj",
       "projectName": "RetroStoreApi",
-      "projectPath": "/Users/macbook/Desktop/RetroStore/backend/RetroStoreApi/RetroStoreApi.csproj",
+      "projectPath": "/Users/macbook/Desktop/RetroStore 2/backend/RetroStoreApi/RetroStoreApi.csproj",
       "packagesPath": "/Users/macbook/.nuget/packages/",
-      "outputPath": "/Users/macbook/Desktop/RetroStore/backend/RetroStoreApi/obj/",
+      "outputPath": "/Users/macbook/Desktop/RetroStore 2/backend/RetroStoreApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/macbook/.nuget/NuGet/NuGet.Config"

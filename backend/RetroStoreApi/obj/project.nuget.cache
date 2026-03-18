@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x1HhhHy6ZEQ=",
+  "dgSpecHash": "uVsYYpcFTvI=",
   "success": true,
-  "projectFilePath": "/Users/macbook/Desktop/RetroStore/backend/RetroStoreApi/RetroStoreApi.csproj",
+  "projectFilePath": "/Users/macbook/Desktop/RetroStore 2/backend/RetroStoreApi/RetroStoreApi.csproj",
   "expectedPackageFiles": [
     "/Users/macbook/.nuget/packages/bcrypt.net-next/4.1.0/bcrypt.net-next.4.1.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
