@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <title>admin panel</title>
+</head>
+<body>
+    <div class="admin-page">
+        <aside class="admin-sidebar">
+            <div>
+                <h1 class="admin-logo">retro store</h1>
+                <p class="admin-role">admin panel</p>
+            </div>
+
+            <nav class="admin-nav">
+                <button class="admin-tab active" data-tab="products">products</button>
+                <button class="admin-tab" data-tab="orders">orders</button>
+            </nav>
+
+            <button id="logoutBtn" class="logout-btn">logout</button>
+        </aside>
+
+        <main class="admin-main">
+            <section class="admin-section active" id="productsSection">
+                <div class="section-head">
+                    <h2>manage products</h2>
+                    <p>add, edit, and remove products</p>
+                </div>
+
+                <form id="productForm" class="admin-form">
+                    <input type="hidden" id="productId" />
+
+                    <div class="form-grid">
+                        <label>
+                            <span>name</span>
+                            <input type="text" id="name" required />
+                        </label>
+
+                        <label>
+                            <span>price</span>
+                            <input type="number" id="price" required />
+                        </label>
+
+                        <label>
+                            <span>image url</span>
+                            <input type="text" id="imageUrl" required />
+                        </label>
+
+                        <label>
+                            <span>extra images (comma separated)</span>
+                            <input type="text" id="images" />
+                        </label>
+
+                        <label>
+                            <span>category</span>
+                            <select id="category" required>
+                                <option value="photo-video">photo-video</option>
+                                <option value="audio">audio</option>
+                                <option value="gadgets">gadgets</option>
+                                <option value="accessories">accessories</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            <span>subcategory</span>
+                            <input type="text" id="subCategory" required />
+                        </label>
+
+                        <label>
+                            <span>brand</span>
+                            <input type="text" id="brand" required />
+                        </label>
+
+                        <label>
+                            <span>condition</span>
+                            <select id="condition" required>
+                                <option value="new">new</option>
+                                <option value="used">used</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <label class="description-field">
+                        <span>description</span>
+                        <textarea id="description" rows="5" required></textarea>
+                    </label>
+
+                    <div class="form-actions">
+                        <button type="submit" class="primary-btn">save product</button>
+                        <button type="button" id="resetBtn" class="secondary-btn">reset</button>
+                    </div>
+                </form>
+
+                <div class="list-card">
+                    <h3>all products</h3>
+                    <div id="productsList" class="products-list"></div>
+                </div>
+            </section>
+
+            <section class="admin-section" id="ordersSection">
+                <div class="section-head">
+                    <h2>orders</h2>
+                    <p>track and update customer orders</p>
+                </div>
+
+                <div id="ordersList" class="orders-list"></div>
+            </section>
+        </main>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="./js/admin.js"></script>
+</body>
+</html>

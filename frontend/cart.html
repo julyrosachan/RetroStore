@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <title>cart</title>
+</head>
+<body>
+    <div class="checkout-page">
+        <header class="checkout-header">
+            <a href="./index.html" class="brand">retro store</a>
+            <div class="header-right">
+                <a href="#" class="support-link">contact support</a>
+                <a href="#" class="account-link">◌</a>
+            </div>
+        </header>
+
+        <main class="checkout-layout">
+            <section class="cart-summary">
+                <div class="cart-list" id="cartList">
+                    <!-- js ile dolacaq -->
+                </div>
+
+                <div class="cart-totals">
+                    <div class="total-row">
+                        <span>subtotal</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="total-row">
+                        <span>taxes</span>
+                        <span id="taxes">$0.00</span>
+                    </div>
+                    <div class="total-row">
+                        <span>shipping</span>
+                        <span id="shipping">$0.00</span>
+                    </div>
+
+                    <div class="total-row total-final">
+                        <span>total</span>
+                        <span id="total">$0.00</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="checkout-form-side">
+                <button class="apple-pay-btn"> pay</button>
+
+                <div class="divider">
+                    <span></span>
+                    <p>or</p>
+                    <span></span>
+                </div>
+
+                <div class="form-section">
+                    <h2>contact information</h2>
+
+                    <label class="field-group">
+                        <span>email address</span>
+                        <input type="email" placeholder="" />
+                    </label>
+
+                    <label class="field-group">
+                        <span>phone number</span>
+                        <input type="text" placeholder="" />
+                    </label>
+
+                    <label class="checkbox-row">
+                        <input type="checkbox" />
+                        <span>i have read the terms and conditions and agree to the sale of my personal information to the highest bidder.</span>
+                    </label>
+
+                    <button class="continue-btn">continue</button>
+                </div>
+
+                <div class="accordion-list">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>payment details</span>
+                            <span>+</span>
+                        </button>
+                        <div class="accordion-body">
+                            <label class="field-group">
+                                <span>cardholder name</span>
+                                <input type="text" />
+                            </label>
+
+                            <label class="field-group">
+                                <span>card number</span>
+                                <input type="text" />
+                            </label>
+
+                            <div class="split-fields">
+                                <label class="field-group">
+                                    <span>expiry</span>
+                                    <input type="text" placeholder="mm/yy" />
+                                </label>
+
+                                <label class="field-group">
+                                    <span>cvv</span>
+                                    <input type="text" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>shipping address</span>
+                            <span>+</span>
+                        </button>
+                        <div class="accordion-body">
+                            <label class="field-group">
+                                <span>full name</span>
+                                <input type="text" />
+                            </label>
+
+                            <label class="field-group">
+                                <span>address</span>
+                                <input type="text" />
+                            </label>
+
+                            <div class="split-fields">
+                                <label class="field-group">
+                                    <span>city</span>
+                                    <input type="text" />
+                                </label>
+
+                                <label class="field-group">
+                                    <span>postal code</span>
+                                    <input type="text" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>billing address</span>
+                            <span>+</span>
+                        </button>
+                        <div class="accordion-body">
+                            <label class="field-group">
+                                <span>billing address</span>
+                                <input type="text" />
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>review</span>
+                            <span>+</span>
+                        </button>
+                        <div class="accordion-body">
+                            <p class="review-text">
+                                review your cart items, contact details, and delivery information before placing your order.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./js/cart.js"></script>
+</body>
+</html>

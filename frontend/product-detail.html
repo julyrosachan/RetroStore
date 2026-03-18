@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/product-detail.css" />
+    <title>product detail</title>
+</head>
+<body>
+    <div class="detail-page">
+        <div class="breadcrumb">
+            <a href="./index.html">home</a>
+            <span>/</span>
+            <a href="./category.html">shop</a>
+            <span>/</span>
+            <span id="breadcrumbCategory">audio</span>
+        </div>
+
+        <section class="detail-layout">
+            <div class="detail-gallery">
+                <div class="main-image">
+                    <img id="mainProductImage" src="" alt="product image">
+                </div>
+
+                <div class="thumb-row" id="thumbRow"></div>
+            </div>
+
+            <div class="detail-info">
+                <div class="top-line">
+                    <h1 class="product-title" id="detailName">sony walkman</h1>
+                    <p class="detail-price" id="detailPrice">$95</p>
+                </div>
+
+                <div class="detail-meta">
+                    <span class="meta-tag" id="detailBrand">sony</span>
+                    <span class="meta-tag" id="detailCondition">used</span>
+                    <span class="meta-tag" id="detailCategory">audio</span>
+                </div>
+
+                <div class="detail-block">
+                    <h3>description</h3>
+                    <p id="detailDescription"></p>
+                </div>
+
+                <div class="detail-block">
+                    <h3>details</h3>
+                    <ul class="detail-list">
+                        <li><strong>category:</strong> <span id="detailSubCategory">cassette player</span></li>
+                        <li><strong>brand:</strong> <span id="detailBrandText">sony</span></li>
+                        <li><strong>condition:</strong> <span id="detailConditionText">used</span></li>
+                    </ul>
+                </div>
+
+                <button class="add-cart-btn">add to cart</button>
+            </div>
+        </section>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="./js/product-detail.js"></script>
+</body>
+</html>

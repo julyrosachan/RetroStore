@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/category.css">
+    <title>retro store</title>
+</head>
+
+<body>
+    <nav class="nav">
+    <div class="container">
+        <div class="nav-shell">
+            <div class="logo">
+                <a href="./index.html">sys<span>.</span>9k</a>
+            </div>
+
+            <div class="nav-search">
+                <input type="text" placeholder="search products..." id="navSearchInput" />
+                <button type="button" class="search-btn">⌕</button>
+            </div>
+
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="./category.html">shop</a></li>
+                    <li><a href="./cart.html">cart</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-actions">
+                <a href="./cart.html" class="icon-btn">cart</a>
+
+                <a href="./auth.html" class="profile-pill" id="profileLink">
+                    <span class="profile-name" id="profileName">sign in</span>
+                    <span class="profile-avatar">
+                        <img id="profileAvatar" src="https://i.pravatar.cc/80?img=12" alt="profile" />
+                    </span>
+                </a>
+            </div>
+
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </div>
+</nav>
+    <div class="page">
+        <div class="topbar">
+            <div>
+                <h1 class="title">all gear</h1>
+                <p class="subtitle">photo-video, audio, gadgets + accessories</p>
+            </div>
+
+            <div class="tabs" id="tabs">
+                <button class="tab active" data-category="all">all gear</button>
+                <button class="tab" data-category="photo-video">photo-video</button>
+                <button class="tab" data-category="audio">audio</button>
+                <button class="tab" data-category="gadgets">gadgets</button>
+                <button class="tab" data-category="accessories">accessories</button>
+            </div>
+        </div>
+
+        <div class="layout">
+            <aside class="sidebar">
+                <div class="sidebar-title">shop filters</div>
+
+                <div class="filter-group">
+                    <div class="filter-header" data-target="categoryFilter">
+                        <span>category</span>
+                        <span class="toggle-symbol">−</span>
+                    </div>
+                    <div class="filter-list" id="categoryFilter">
+                        <label><input type="checkbox" value="photo-video" class="category-checkbox" />
+                            photo-video</label>
+                        <label><input type="checkbox" value="audio" class="category-checkbox" /> audio</label>
+                        <label><input type="checkbox" value="gadgets" class="category-checkbox" /> gadgets</label>
+                        <label><input type="checkbox" value="accessories" class="category-checkbox" />
+                            accessories</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-header" data-target="brandFilter">
+                        <span>brand</span>
+                        <span class="toggle-symbol">+</span>
+                    </div>
+                    <div class="filter-list collapsed" id="brandFilter"></div>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-header" data-target="conditionFilter">
+                        <span>condition</span>
+                        <span class="toggle-symbol">+</span>
+                    </div>
+                    <div class="filter-list collapsed" id="conditionFilter"></div>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-header" data-target="priceFilter">
+                        <span>price</span>
+                        <span class="toggle-symbol">+</span>
+                    </div>
+                    <div class="filter-list collapsed" id="priceFilter">
+                        <label>
+                            <span>min price</span>
+                            <input type="number" id="minPrice" placeholder="0" class="price-input" />
+                        </label>
+                        <label>
+                            <span>max price</span>
+                            <input type="number" id="maxPrice" placeholder="999" class="price-input" />
+                        </label>
+                    </div>
+                </div>
+            </aside>
+
+            <main>
+                <section class="products" id="productGrid"></section>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/category.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <title>my account</title>
+</head>
+<body>
+    <div class="profile-page">
+        <div class="profile-breadcrumb">
+            <a href="./index.html">homepage</a>
+            <span>/</span>
+            <span>my account</span>
+        </div>
+
+        <h1 class="profile-page-title">my account</h1>
+
+        <div class="profile-layout">
+            <aside class="profile-sidebar">
+                <button class="profile-tab active" data-tab="details">my details</button>
+                <button class="profile-tab" data-tab="orders">my orders</button>
+                <button class="profile-tab" data-tab="saved">saved items</button>
+                <button class="profile-tab" data-tab="settings">account settings</button>
+                <button class="profile-logout" id="logoutBtn">logout</button>
+            </aside>
+
+            <main class="profile-content">
+                <section class="profile-panel active" id="detailsPanel">
+                    <h2>my details</h2>
+
+                    <div class="panel-block">
+                        <div class="panel-info">
+                            <h3>personal information</h3>
+                            <p>manage your basic account details for your retro store profile.</p>
+                        </div>
+
+                        <div class="panel-form">
+                            <div class="field-grid">
+                                <label>
+                                    <span>full name</span>
+                                    <input type="text" id="profileName" placeholder="your name" />
+                                </label>
+
+                                <label>
+                                    <span>email address</span>
+                                    <input type="email" id="profileEmail" placeholder="your email" />
+                                </label>
+                            </div>
+
+                            <label>
+                                <span>phone number</span>
+                                <input type="text" id="profilePhone" placeholder="optional" />
+                            </label>
+
+                            <button class="save-btn">save</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="profile-panel" id="ordersPanel">
+                    <h2>my orders</h2>
+                    <div class="empty-box">
+                        <p>you do not have any orders yet.</p>
+                    </div>
+                </section>
+
+                <section class="profile-panel" id="savedPanel">
+                    <h2>saved items</h2>
+                    <div class="empty-box">
+                        <p>your saved items will appear here.</p>
+                    </div>
+                </section>
+
+                <section class="profile-panel" id="settingsPanel">
+                    <h2>account settings</h2>
+
+                    <div class="panel-block">
+                        <div class="panel-info">
+                            <h3>security</h3>
+                            <p>update your password and manage account preferences.</p>
+                        </div>
+
+                        <div class="panel-form">
+                            <label>
+                                <span>new password</span>
+                                <input type="password" placeholder="new password" />
+                            </label>
+
+                            <label>
+                                <span>confirm password</span>
+                                <input type="password" placeholder="confirm password" />
+                            </label>
+
+                            <button class="save-btn">update</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="./js/profile.js"></script>
+</body>
+</html>

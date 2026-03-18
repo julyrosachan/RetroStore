@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/auth.css" />
+    <title>auth</title>
+</head>
+<body>
+    <div class="auth-page">
+        <div class="auth-wrapper">
+            <div class="auth-top">
+                <div class="auth-logo">〰</div>
+                <h1 id="authTitle">sign in to your account</h1>
+            </div>
+
+            <div class="auth-card">
+                <form class="auth-form" id="authForm">
+                    <label class="auth-field" id="nameField">
+                        <span>full name</span>
+                        <input type="text" id="fullNameInput" />
+                    </label>
+
+                    <label class="auth-field">
+                        <span>email address</span>
+                        <input type="email" id="emailInput" />
+                    </label>
+
+                    <label class="auth-field">
+                        <span>password</span>
+                        <input type="password" id="passwordInput" />
+                    </label>
+
+                    <label class="auth-field" id="confirmField">
+                        <span>confirm password</span>
+                        <input type="password" id="confirmPasswordInput" />
+                    </label>
+
+                    <div class="auth-row" id="loginExtras">
+                        <label class="remember-box">
+                            <input type="checkbox" />
+                            <span>remember me</span>
+                        </label>
+
+                        <a href="#" class="auth-link">forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="auth-btn" id="submitBtn">sign in</button>
+                </form>
+            </div>
+
+            <p class="auth-bottom-text" id="switchText">
+                not a member?
+                <a href="#" id="switchModeBtn">create an account</a>
+            </p>
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="./js/auth.js"></script>
+</body>
+</html>
